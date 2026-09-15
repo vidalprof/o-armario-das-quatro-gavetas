@@ -1,0 +1,130 @@
+{
+ "ano": 2,
+ "componente": "Língua Portuguesa",
+ "rede": "Currículo da Educação Básica do Sistema Municipal de Ensino de Blumenau",
+ "documento": "_curriculo/blumenau.txt",
+ "conceitos": [
+  "consoante",
+  "vogal",
+  "silaba",
+  "palavra",
+  "frase"
+ ],
+ "fora_do_curriculo": [],
+ "degrau": 1,
+ "evidencia": [
+  "Jogado do começo ao fim no navegador, item por item, antes de publicar.",
+  "Um jogador automático resolve cada item pela resposta declarada e confere se a folha fecha.",
+  "Leiaute medido em 6 tamanhos de tela: nenhuma figura cortada e nenhum alvo de toque menor que 40 px.",
+  "Toda tela é narrada com voz real, e cada opção de resposta tem o seu alto-falante.",
+  "As 35 folhas nasceram do crivo de 89 folhas de papel reais, em `_sequencias/POTE-SIL2.md`.",
+  "As habilidades citadas no dossiê são conferidas, palavra por palavra, contra o currículo da rede."
+ ],
+ "observacoes": [
+  "TRÊS BLOCOS ENTRAM DECLARADOS, porque o currículo os pede e NENHUMA das 89 folhas colhidas os cobre: (5) marcar a vogal dentro de cada sílaba — a habilidade diz com todas as letras “identificando que existem vogais em todas as sílabas” e nenhuma folha manda a criança verificar; (30) separar a frase grudada — a habilidade fala de FRASES E TEXTOS e todas as folhas trabalham a palavra solta; e as sílabas V e CVC dentro das folhas 4 e 5.",
+  "O GESTO DE ABERTURA — bater palma cada vez que a boca abre — veio de uma NOTA AO PROFESSOR impressa numa das folhas colhidas (a78), não da minha cabeça.",
+  "O MUNDO DO CADERNO (um armário de quatro gavetas) veio da folha b16, que desenha exatamente isso.",
+  "O CONCEITO VEM NA ÚLTIMA FOLHA, nunca na primeira: a criança conta sílabas com a boca e com a mão em 34 folhas antes de receber as palavras monossílaba, dissílaba, trissílaba e polissílaba."
+ ],
+ "objetivos": [
+  {
+   "objetivo": "Sentir a sílaba: contar quantas vezes a boca abre",
+   "folhas": [
+    1,
+    2,
+    26
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Construção do sistema alfabético e da ortografia",
+   "habilidade": "HABILIDADE: \"Ler e escrever corretamente palavras com sílabas CV, V, CVC, CCV, identificando que existem vogais em todas as sílabas.\""
+  },
+  {
+   "objetivo": "Separar a palavra em sílabas, e ver a vogal dentro de cada uma",
+   "folhas": [
+    3,
+    4,
+    5
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Construção do sistema alfabético e da ortografia",
+   "habilidade": "HABILIDADE: \"Ler e escrever corretamente palavras com sílabas CV, V, CVC, CCV, identificando que existem vogais em todas as sílabas.\""
+  },
+  {
+   "objetivo": "Não confundir letra com sílaba",
+   "folhas": [
+    6,
+    7,
+    8,
+    27
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Classificar a palavra pelo número de sílabas",
+   "folhas": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    28,
+    29,
+    35
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Mexer nas sílabas: tirar, pôr e trocar para formar palavras",
+   "folhas": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    33
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Construção do sistema alfabético e da ortografia",
+   "habilidade": "HABILIDADE: \"Segmentar palavras em sílabas e remover e substituir sílabas iniciais, mediais ou finais para criar novas palavras.\""
+  },
+  {
+   "objetivo": "Achar a sílaba certa no meio de muitas",
+   "folhas": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Construção do sistema alfabético e da ortografia",
+   "habilidade": "HABILIDADE: \"Segmentar palavras em sílabas e remover e substituir sílabas iniciais, mediais ou finais para criar novas palavras.\""
+  },
+  {
+   "objetivo": "Separar as palavras dentro da frase e do texto",
+   "folhas": [
+    30,
+    31,
+    32
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  },
+  {
+   "objetivo": "Escrever a própria palavra com o número de sílabas pedido",
+   "folhas": [
+    34
+   ],
+   "pratica": "Análise linguística/semiótica (alfabetização)",
+   "objeto": "Segmentação de palavras/classificação de palavras por número de sílabas",
+   "habilidade": "HABILIDADE: \"Segmentar corretamente as palavras ao escrever frases e textos.\""
+  }
+ ]
+}
