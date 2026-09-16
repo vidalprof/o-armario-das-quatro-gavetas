@@ -79,6 +79,18 @@ function nomeSecreto(txt, id){
 }
 function chaveQuadro(w){ return String(w).toLowerCase().replace(/[^a-z]/g, ""); }
 
+/* ⚠️⚠️ TODA SÍLABA QUE A CRIANÇA TOCA FALA POR AQUI, E POR NENHUM OUTRO
+   CAMINHO. O sintetizador não lê SOM, lê PALAVRA: dê "SA" a ele e ele soletra
+   "esse-á" — foi isso que o Marcos ouviu em SAPO (16/set/2026). O pedaço é
+   RECORTADO de dentro da gravação da palavra inteira (`silabas.json` +
+   `_padrao/silabas_voz.py`, no `entregar.yml`), e o `SILMAP` diz de qual
+   palavra veio cada um.
+   ⚠️ Não há reserva sintetizada: faltando o recorte, o app diz a palavra
+      inteira. Reserva sintetizada seria o defeito voltando calado. */
+function falaDaSilaba(sb){
+  return function(){ falarSilaba(null, 0, String(sb).toUpperCase()); };
+}
+
 /* ---------- fileira de opções (a peça que mais se repete) ----------
    `soltarEm` (opcional) liga o ARRASTAR: a criança pode puxar a peça até o
    alvo em vez de só tocar nela. AS DUAS PORTAS, SEMPRE — no PC da escola ela
@@ -88,7 +100,9 @@ function opcoes(pai, pi, id, lista, certa, cls, falaCerto, falaDica, aoAcertar, 
   var box = el("div", "ops"), feito = !!ST.resp[id];
   function responde(o, b){
     if(ST.resp[id]) return;
-    sPasso(); if(o.fala) falar(o.fala);
+    /* ⚠️ `fala` pode ser uma FUNÇÃO: é assim que a opção que é uma SÍLABA diz o
+       PEDAÇO recortado da palavra, em vez de a voz soletrar "esse-á". */
+    sPasso(); if(o.fala) (typeof o.fala === "function" ? o.fala() : falar(o.fala));
     if(o.v === certa){
       b.className = "op" + (cls ? " " + cls : "") + " certa";
       if(aoAcertar) aoAcertar(b);
@@ -1274,6 +1288,9 @@ function marqueConfira(box, id, pi, pecas, fCerto, fDica){
     b.onclick = function(){
       if(ST.resp[id]) return;
       sPasso();
+      /* ⭐ a peça diz o que está escrito nela ao ser tocada — aqui nada
+         interrompe, porque a conferência só acontece no botão Conferir. */
+      if(P.fala) P.fala();
       if(marcadas[P.k]){ delete marcadas[P.k]; b.className = "sil"; }
       else { marcadas[P.k] = 1; b.className = "sil marcada"; }
     };
@@ -1699,6 +1716,10 @@ function montaOrdenar(d, pi, fonte){
       b.onclick = function(){
         if(ST.resp[id]) return;
         sPasso();
+        /* ⭐ o pedaço FALA ao ser tocado — é como a criança confere se aquele é
+           mesmo o som que ela está procurando. Sem isto a folha vira adivinha
+           para quem ainda não lê. */
+        falaDaSilaba(P.sb)();
         if(P.n !== feitas){
           b.className = "sil nao";
           setTimeout(function(){ b.className = "sil"; }, 420);
@@ -1748,7 +1769,7 @@ function montaFalta(d, pi, ondeFala){
     lin.appendChild(botaoSom("Ouvir a palavra inteira", function(){ falar(ondeFala + "_" + k); }));
     box.appendChild(lin);
     var ops = baralha(F.ops.map(function(sb){
-      return {v: sb.toLowerCase(), rot: sb, aria: sb, fala: "sil_" + chaveQuadro(sb)};
+      return {v: sb.toLowerCase(), rot: sb, aria: sb, fala: falaDaSilaba(sb)};
     }));
     opcoes(box, pi, id, ops, F.r.toLowerCase(), "pal",
            "certo" + pi + "_" + k, "dica" + pi + "_" + k,
@@ -1794,7 +1815,7 @@ function f20(d, pi){
     registra(id, pi, alvos.join(" "));
     var lin = el("div", "enunlin");
     lin.appendChild(el("div", "palgrande", '<span class="pd forte">' + J.i + "</span>"));
-    lin.appendChild(botaoSom("Ouvir o pedaço", function(){ falar("jun_" + k); }));
+    lin.appendChild(botaoSom("Ouvir o pedaço", falaDaSilaba(J.i)));
     box.appendChild(lin);
     var cx = el("div", "juntas"), feitos = 0;
     J.f.forEach(function(fim, n){
@@ -1837,8 +1858,8 @@ function montaMarcar(d, pi){
     lin.appendChild(botaoSom("Ouvir a palavra", function(){ falar("mar_" + k); }));
     box.appendChild(lin);
     var pecas = [];
-    M.g.forEach(function(sb, n){ pecas.push({k: "g" + n, t: sb, ok: 1}); });
-    M.d.forEach(function(sb, n){ pecas.push({k: "d" + n, t: sb, ok: 0}); });
+    M.g.forEach(function(sb, n){ pecas.push({k: "g" + n, t: sb, ok: 1, fala: falaDaSilaba(sb)}); });
+    M.d.forEach(function(sb, n){ pecas.push({k: "d" + n, t: sb, ok: 0, fala: falaDaSilaba(sb)}); });
     marqueConfira(box, id, pi, baralha(pecas),
                   "certo" + pi + "_" + k, "dica" + pi + "_" + k);
     fechaItem(d, box, id);
@@ -2287,6 +2308,7 @@ function f33(d, pi){
       b.onclick = function(){
         if(ST.resp[id]) return;
         sPasso();
+        falaDaSilaba(sb)();
         if(pos !== feitas){
           b.className = "sil nao";
           setTimeout(function(){ b.className = "sil"; }, 420);

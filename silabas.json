@@ -1,0 +1,262 @@
+{
+ "prefixo": "gv_",
+ "voz": "pt-BR-AntonioNeural",
+ "palavras": {
+  "abacaxi": [
+   "A",
+   "BA",
+   "CA",
+   "XI"
+  ],
+  "asa": [
+   "A",
+   "SA"
+  ],
+  "bicicleta": [
+   "BI",
+   "CI",
+   "CLE",
+   "TA"
+  ],
+  "bola": [
+   "BO",
+   "LA"
+  ],
+  "boneca": [
+   "BO",
+   "NE",
+   "CA"
+  ],
+  "borboleta": [
+   "BOR",
+   "BO",
+   "LE",
+   "TA"
+  ],
+  "cadeira": [
+   "CA",
+   "DEI",
+   "RA"
+  ],
+  "caneta": [
+   "CA",
+   "NE",
+   "TA"
+  ],
+  "carro": [
+   "CAR",
+   "RO"
+  ],
+  "casa": [
+   "CA",
+   "SA"
+  ],
+  "cavalo": [
+   "CA",
+   "VA",
+   "LO"
+  ],
+  "caça": [
+   "CA",
+   "ÇA"
+  ],
+  "cenoura": [
+   "CENOU",
+   "RA"
+  ],
+  "chocolate": [
+   "CHO",
+   "CO",
+   "LA",
+   "TE"
+  ],
+  "cão": [
+   "CÃO"
+  ],
+  "dedo": [
+   "DE",
+   "DO"
+  ],
+  "dia": [
+   "DI",
+   "A"
+  ],
+  "elefante": [
+   "E",
+   "LE",
+   "FAN",
+   "TE"
+  ],
+  "escola": [
+   "ES",
+   "CO",
+   "LA"
+  ],
+  "fevereiro": [
+   "FE",
+   "VE",
+   "REI",
+   "RO"
+  ],
+  "flor": [
+   "FLOR"
+  ],
+  "folha": [
+   "FO",
+   "LHA"
+  ],
+  "garrafa": [
+   "GAR",
+   "RA",
+   "FA"
+  ],
+  "gato": [
+   "GA",
+   "TO"
+  ],
+  "girafa": [
+   "GI",
+   "RA",
+   "FA"
+  ],
+  "ilha": [
+   "I",
+   "LHA"
+  ],
+  "janela": [
+   "JA",
+   "NE",
+   "LA"
+  ],
+  "lanche": [
+   "LAN",
+   "CHE"
+  ],
+  "lua": [
+   "LU",
+   "A"
+  ],
+  "macaco": [
+   "MA",
+   "CA",
+   "CO"
+  ],
+  "mala": [
+   "MA",
+   "LA"
+  ],
+  "maleta": [
+   "MA",
+   "LE",
+   "TA"
+  ],
+  "mar": [
+   "MAR"
+  ],
+  "minuto": [
+   "MI",
+   "NU",
+   "TO"
+  ],
+  "mola": [
+   "MO",
+   "LA"
+  ],
+  "mão": [
+   "MÃO"
+  ],
+  "nadadora": [
+   "NA",
+   "DA",
+   "DO",
+   "RA"
+  ],
+  "panela": [
+   "PA",
+   "NE",
+   "LA"
+  ],
+  "pato": [
+   "PA",
+   "TO"
+  ],
+  "pena": [
+   "PE",
+   "NA"
+  ],
+  "pipoca": [
+   "PI",
+   "PO",
+   "CA"
+  ],
+  "porta": [
+   "POR",
+   "TA"
+  ],
+  "prato": [
+   "PRA",
+   "TO"
+  ],
+  "pão": [
+   "PÃO"
+  ],
+  "pé": [
+   "PÉ"
+  ],
+  "rio": [
+   "RI",
+   "O"
+  ],
+  "sabão": [
+   "SA",
+   "BÃO"
+  ],
+  "sapato": [
+   "SA",
+   "PA",
+   "TO"
+  ],
+  "sapo": [
+   "SA",
+   "PO"
+  ],
+  "sino": [
+   "SI",
+   "NO"
+  ],
+  "sofá": [
+   "SO",
+   "FÁ"
+  ],
+  "sol": [
+   "SOL"
+  ],
+  "sopa": [
+   "SO",
+   "PA"
+  ],
+  "tijolo": [
+   "TI",
+   "JO",
+   "LO"
+  ],
+  "tomate": [
+   "TO",
+   "MA",
+   "TE"
+  ],
+  "tucano": [
+   "TU",
+   "CA",
+   "NO"
+  ],
+  "uva": [
+   "U",
+   "VA"
+  ],
+  "vidro": [
+   "VI",
+   "DRO"
+  ]
+ }
+}
