@@ -3,14 +3,14 @@
  "rate": "-25%",
  "conferidas": [
   {
-   "palavra": "bicicleta",
-   "caminho": "corrida",
-   "pedacos": 4
-  },
-  {
    "palavra": "bola",
    "caminho": "corrida",
    "pedacos": 2
+  },
+  {
+   "palavra": "bicicleta",
+   "caminho": "corrida",
+   "pedacos": 4
   },
   {
    "palavra": "asa",
@@ -28,7 +28,7 @@
    "pedacos": 3
   },
   {
-   "palavra": "cadeira",
+   "palavra": "caneta",
    "caminho": "corrida",
    "pedacos": 3
   },
@@ -38,9 +38,14 @@
    "pedacos": 4
   },
   {
-   "palavra": "caneta",
+   "palavra": "cadeira",
    "caminho": "corrida",
    "pedacos": 3
+  },
+  {
+   "palavra": "caça",
+   "caminho": "corrida",
+   "pedacos": 2
   },
   {
    "palavra": "carro",
@@ -58,13 +63,13 @@
    "pedacos": 3
   },
   {
-   "palavra": "caça",
+   "palavra": "dedo",
    "caminho": "corrida",
    "pedacos": 2
   },
   {
-   "palavra": "dedo",
-   "caminho": "corrida",
+   "palavra": "cenoura",
+   "caminho": "corrida (pedaco)",
    "pedacos": 2
   },
   {
@@ -78,21 +83,6 @@
    "pedacos": 1
   },
   {
-   "palavra": "cenoura",
-   "caminho": "corrida (pedaco)",
-   "pedacos": 2
-  },
-  {
-   "palavra": "dia",
-   "caminho": "corrida",
-   "pedacos": 2
-  },
-  {
-   "palavra": "escola",
-   "caminho": "corrida",
-   "pedacos": 3
-  },
-  {
    "palavra": "fevereiro",
    "caminho": "corrida",
    "pedacos": 4
@@ -103,17 +93,12 @@
    "pedacos": 4
   },
   {
-   "palavra": "folha",
+   "palavra": "dia",
    "caminho": "corrida",
    "pedacos": 2
   },
   {
-   "palavra": "flor",
-   "caminho": "corrida",
-   "pedacos": 1
-  },
-  {
-   "palavra": "girafa",
+   "palavra": "escola",
    "caminho": "corrida",
    "pedacos": 3
   },
@@ -128,14 +113,14 @@
    "pedacos": 2
   },
   {
-   "palavra": "ilha",
+   "palavra": "folha",
    "caminho": "corrida",
    "pedacos": 2
   },
   {
-   "palavra": "macaco",
+   "palavra": "flor",
    "caminho": "corrida",
-   "pedacos": 3
+   "pedacos": 1
   },
   {
    "palavra": "lanche",
@@ -148,14 +133,19 @@
    "pedacos": 3
   },
   {
-   "palavra": "mala",
+   "palavra": "girafa",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "ilha",
    "caminho": "corrida",
    "pedacos": 2
   },
   {
-   "palavra": "mar",
+   "palavra": "macaco",
    "caminho": "corrida",
-   "pedacos": 1
+   "pedacos": 3
   },
   {
    "palavra": "maleta",
@@ -163,14 +153,19 @@
    "pedacos": 3
   },
   {
-   "palavra": "mola",
+   "palavra": "lua",
    "caminho": "corrida",
    "pedacos": 2
   },
   {
-   "palavra": "mão",
+   "palavra": "mala",
    "caminho": "corrida",
-   "pedacos": 1
+   "pedacos": 2
+  },
+  {
+   "palavra": "mola",
+   "caminho": "corrida",
+   "pedacos": 2
   },
   {
    "palavra": "minuto",
@@ -178,9 +173,14 @@
    "pedacos": 3
   },
   {
-   "palavra": "nadadora",
+   "palavra": "mão",
    "caminho": "corrida",
-   "pedacos": 4
+   "pedacos": 1
+  },
+  {
+   "palavra": "mar",
+   "caminho": "corrida",
+   "pedacos": 1
   },
   {
    "palavra": "pato",
@@ -188,14 +188,19 @@
    "pedacos": 2
   },
   {
-   "palavra": "panela",
+   "palavra": "nadadora",
    "caminho": "corrida",
-   "pedacos": 3
+   "pedacos": 4
   },
   {
    "palavra": "pena",
    "caminho": "corrida",
    "pedacos": 2
+  },
+  {
+   "palavra": "panela",
+   "caminho": "corrida",
+   "pedacos": 3
   },
   {
    "palavra": "porta",
@@ -208,27 +213,12 @@
    "pedacos": 3
   },
   {
-   "palavra": "prato",
-   "caminho": "corrida",
-   "pedacos": 2
-  },
-  {
-   "palavra": "pé",
-   "caminho": "corrida",
-   "pedacos": 1
-  },
-  {
-   "palavra": "rio",
-   "caminho": "corrida",
-   "pedacos": 2
-  },
-  {
    "palavra": "pão",
    "caminho": "corrida",
    "pedacos": 1
   },
   {
-   "palavra": "sabão",
+   "palavra": "prato",
    "caminho": "corrida",
    "pedacos": 2
   },
@@ -238,9 +228,19 @@
    "pedacos": 3
   },
   {
-   "palavra": "sino",
+   "palavra": "rio",
    "caminho": "corrida",
    "pedacos": 2
+  },
+  {
+   "palavra": "sabão",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "pé",
+   "caminho": "corrida",
+   "pedacos": 1
   },
   {
    "palavra": "sapo",
@@ -249,6 +249,11 @@
   },
   {
    "palavra": "sofá",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "sino",
    "caminho": "corrida",
    "pedacos": 2
   },
@@ -268,14 +273,14 @@
    "pedacos": 3
   },
   {
-   "palavra": "sopa",
-   "caminho": "corrida",
-   "pedacos": 2
-  },
-  {
    "palavra": "tucano",
    "caminho": "corrida",
    "pedacos": 3
+  },
+  {
+   "palavra": "sopa",
+   "caminho": "corrida",
+   "pedacos": 2
   },
   {
    "palavra": "uva",
@@ -288,10 +293,5 @@
    "pedacos": 2
   }
  ],
- "nao_conferidas": [
-  {
-   "palavra": "lua",
-   "motivo": "`espaco` saiu 30% mais comprido que a palavra inteira — sinal de soletracao"
-  }
- ]
+ "nao_conferidas": []
 }
