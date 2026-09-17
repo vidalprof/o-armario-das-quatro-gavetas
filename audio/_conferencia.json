@@ -1,0 +1,297 @@
+{
+ "voz": "pt-BR-AntonioNeural",
+ "rate": "-25%",
+ "conferidas": [
+  {
+   "palavra": "bicicleta",
+   "caminho": "corrida",
+   "pedacos": 4
+  },
+  {
+   "palavra": "bola",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "asa",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "abacaxi",
+   "caminho": "corrida",
+   "pedacos": 4
+  },
+  {
+   "palavra": "boneca",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "cadeira",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "borboleta",
+   "caminho": "corrida",
+   "pedacos": 4
+  },
+  {
+   "palavra": "caneta",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "carro",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "casa",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "cavalo",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "caça",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "dedo",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "chocolate",
+   "caminho": "corrida",
+   "pedacos": 4
+  },
+  {
+   "palavra": "cão",
+   "caminho": "corrida",
+   "pedacos": 1
+  },
+  {
+   "palavra": "cenoura",
+   "caminho": "corrida (pedaco)",
+   "pedacos": 2
+  },
+  {
+   "palavra": "dia",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "escola",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "fevereiro",
+   "caminho": "corrida",
+   "pedacos": 4
+  },
+  {
+   "palavra": "elefante",
+   "caminho": "corrida",
+   "pedacos": 4
+  },
+  {
+   "palavra": "folha",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "flor",
+   "caminho": "corrida",
+   "pedacos": 1
+  },
+  {
+   "palavra": "girafa",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "garrafa",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "gato",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "ilha",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "macaco",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "lanche",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "janela",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "mala",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "mar",
+   "caminho": "corrida",
+   "pedacos": 1
+  },
+  {
+   "palavra": "maleta",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "mola",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "mão",
+   "caminho": "corrida",
+   "pedacos": 1
+  },
+  {
+   "palavra": "minuto",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "nadadora",
+   "caminho": "corrida",
+   "pedacos": 4
+  },
+  {
+   "palavra": "pato",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "panela",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "pena",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "porta",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "pipoca",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "prato",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "pé",
+   "caminho": "corrida",
+   "pedacos": 1
+  },
+  {
+   "palavra": "rio",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "pão",
+   "caminho": "corrida",
+   "pedacos": 1
+  },
+  {
+   "palavra": "sabão",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "sapato",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "sino",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "sapo",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "sofá",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "sol",
+   "caminho": "corrida",
+   "pedacos": 1
+  },
+  {
+   "palavra": "tomate",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "tijolo",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "sopa",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "tucano",
+   "caminho": "corrida",
+   "pedacos": 3
+  },
+  {
+   "palavra": "uva",
+   "caminho": "corrida",
+   "pedacos": 2
+  },
+  {
+   "palavra": "vidro",
+   "caminho": "corrida",
+   "pedacos": 2
+  }
+ ],
+ "nao_conferidas": [
+  {
+   "palavra": "lua",
+   "motivo": "`espaco` saiu 30% mais comprido que a palavra inteira — sinal de soletracao"
+  }
+ ]
+}
