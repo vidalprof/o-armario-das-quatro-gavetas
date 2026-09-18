@@ -44,9 +44,9 @@ html,body{margin:0;min-height:100%}
   --texto2:#3a2f27;
   --texto3:#4a3d33;
   /* a cor deste caderno é a TELHA: ele é sobre casas */
-  --cor:#b0562a;
-  --cor2:#8d4120;
-  --corclara:#fdf1e9;
+  --cor:#8e5c1e;
+  --cor2:#664216;
+  --corclara:#f1ebe4;
 }
 body{font-family:"Segoe UI",Arial,sans-serif;background:#f4efe9;color:var(--texto);padding-bottom:160px}
 #topo{position:-webkit-sticky;position:sticky;top:0;z-index:20;background:#fff;border-bottom:3px solid var(--cor);
@@ -82,7 +82,7 @@ button{font-family:inherit;cursor:pointer}
 .faixa .num{background:#fff;color:var(--cor);font-weight:900;border-radius:50%;width:36px;height:36px;display:flex;
   align-items:center;justify-content:center;font-size:18px;flex:none}
 /* uma cor por BLOCO da escada — a criança vê que mudou de assunto */
-.pagina.c1 .faixa{background:#b0562a}.pagina.c1 .faixa .num{color:#b0562a}
+.pagina.c1 .faixa{background:#8e5c1e}.pagina.c1 .faixa .num{color:#8e5c1e}
 .pagina.c2 .faixa{background:#1179bf}.pagina.c2 .faixa .num{color:#1179bf}
 .pagina.c3 .faixa{background:#15803d}.pagina.c3 .faixa .num{color:#15803d}
 .pagina.c4 .faixa{background:#8b5cf6}.pagina.c4 .faixa .num{color:#8b5cf6}
@@ -351,61 +351,44 @@ button{font-family:inherit;cursor:pointer}
 #nomeIn:focus{outline:none;border-color:#1179bf;box-shadow:0 0 0 4px rgba(17,121,191,.25)}
 
 /* ================= A CAPA =================
-   O tema sai do nome: uma RUA onde as casas do mundo inteiro são vizinhas.
-   O céu com o sol, a fileira de casas subindo uma depois da outra e a calçada
-   embaixo. Só CSS e PNG: nada de SVG, nada de emoji. */
+   IDENTIDADE PRÓPRIA deste caderno (Marcos, 18/set/2026: "cada caderno precisa ter
+   capa diferente, cor diferente, animações"). Cena: o armário: as gavetas abrindo com uma sílaba em cada.
+   Gerado por _padrao/identidade_capa.py — editar LÁ, não aqui. Só CSS e PNG das
+   folhas: nada de SVG, nada de emoji. @keyframes com sufixo Sil2 (nome é global).
+   Medido pelo portão 0b11 (_qa/identidade.py). */
 .capa{position:relative;text-align:center;padding:18px 16px 24px;overflow:hidden;
-  background:-webkit-linear-gradient(top,#cbe7f7 0%,#fdf3ea 62%,#fff 100%);
-  background:linear-gradient(180deg,#cbe7f7 0%,#fdf3ea 62%,#fff 100%)}
+  background:-webkit-linear-gradient(top,#f1e6d6 0%,#fbf7f1 60%,#fff 100%);
+  background:linear-gradient(180deg,#f1e6d6 0%,#fbf7f1 60%,#fff 100%)}
 .capa .ceu{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none;overflow:hidden}
-.capa .nv{position:absolute;display:block;border-radius:50%;
-  background:-webkit-radial-gradient(circle,rgba(255,255,255,.85),rgba(255,255,255,0) 70%);
-  background:radial-gradient(circle,rgba(255,255,255,.85),rgba(255,255,255,0) 70%)}
-.capa .n1{width:220px;height:130px;left:-40px;top:14px}
-.capa .n2{width:280px;height:150px;right:-70px;top:44px}
-.capa .n3{width:170px;height:110px;left:46%;top:6px}
-.capa .sol{position:absolute;right:22px;top:16px;width:56px;height:56px;border-radius:50%;
-  background:-webkit-radial-gradient(circle at 40% 38%,#fff2b8,#f5b301);
-  background:radial-gradient(circle at 40% 38%,#fff2b8,#f5b301);
-  box-shadow:0 0 26px rgba(245,179,1,.55)}
-/* ⚠️ O SOL TAPAVA O SUBTÍTULO (achado na foto). O `.ceu` vem antes no HTML,
-   mas os filhos dele são absolutos — e elemento posicionado pinta POR CIMA
-   de irmão não posicionado, mesmo vindo antes. O conserto é levantar o
-   conteúdo, não abaixar o céu. */
-.capa .titu,.capa .sub,.capa .esteira,.capa .chamada{position:relative;z-index:1}
-.capa .chapeu{position:relative;z-index:1;width:66px;height:66px;margin:16px auto 2px;border-radius:16px;
-  background:-webkit-linear-gradient(top left,#d2703c,#8d4120);
-  background:linear-gradient(135deg,#d2703c,#8d4120);color:#fff;font-weight:900;font-size:34px;
-  line-height:66px;box-shadow:0 8px 18px rgba(141,65,32,.36)}
-.capa .chapeu:before{content:"";position:absolute;left:-9px;right:-9px;top:-15px;height:0;
-  border-left:42px solid transparent;border-right:42px solid transparent;border-bottom:18px solid #a33d1e}
-.capa h1.titu{margin:12px 0 4px;line-height:1;display:flex;flex-wrap:wrap;justify-content:center;gap:2px}
-.capa .titu .lt{display:inline-block;font-size:clamp(24px,6.4vw,42px);font-weight:900;letter-spacing:0;
-  color:#8d4120;text-shadow:0 3px 0 #f6dcc8,0 5px 10px rgba(120,60,25,.2);
-  -webkit-animation:caiCasa .5s both;animation:caiCasa .5s both}
-.capa .titu .esp{display:inline-block;width:14px}
-/* ⚠️ `caiCasa` e não `cai`: o confete já tem um `@keyframes cai` que termina em
-   `opacity:0`. Nome de keyframe é global — numa outra capa desta casa a colisão
-   apagou o título inteiro, em silêncio. */
-@-webkit-keyframes caiCasa{from{opacity:0;-webkit-transform:translateY(-26px) rotate(-8deg)}to{opacity:1;-webkit-transform:none}}
-@keyframes caiCasa{from{opacity:0;transform:translateY(-26px) rotate(-8deg)}to{opacity:1;transform:none}}
-.capa .sub{font-weight:700;color:#8d4120;font-size:clamp(13px,3.6vw,18px);margin:6px 0 4px}
-.capa .esteira{max-width:660px;margin:16px auto 4px;position:relative}
-.capa .cena{display:flex;justify-content:center;align-items:flex-end;gap:6px;flex-wrap:nowrap}
-.capa .cena img{width:clamp(46px,13vw,96px);height:clamp(46px,13vw,96px);object-fit:contain;
-  -webkit-animation:sobeCasa 2.6s ease-in-out infinite;animation:sobeCasa 2.6s ease-in-out infinite}
-.capa .cena img:nth-child(2){-webkit-animation-delay:.35s;animation-delay:.35s}
-.capa .cena img:nth-child(3){-webkit-animation-delay:.7s;animation-delay:.7s}
-.capa .cena img:nth-child(4){-webkit-animation-delay:1.05s;animation-delay:1.05s}
-.capa .cena img:nth-child(5){-webkit-animation-delay:1.4s;animation-delay:1.4s}
-@-webkit-keyframes sobeCasa{0%,100%{-webkit-transform:translateY(0)}50%{-webkit-transform:translateY(-7px)}}
-@keyframes sobeCasa{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-.capa .cinta{display:flex;gap:6px;justify-content:center;background:#7b6a5c;border-radius:9px;
-  padding:6px 8px;margin-top:6px;box-shadow:0 6px 14px rgba(70,40,20,.22)}
-.capa .cinta i{display:block;width:26px;height:9px;background:#cbb9a8;border-radius:5px}
-.capa .chamada{margin-top:14px;font-weight:700;color:#5c4c40;font-size:clamp(13px,3.4vw,16px)}
+.capa .titu,.capa .sub,.capa .chamada,.capa .cena{position:relative;z-index:1}
+.capa h1.titu{margin:12px 0 4px;line-height:1;display:flex;flex-wrap:wrap;justify-content:center;gap:2px;
+  -webkit-perspective:600px;perspective:600px}
+.capa .titu .cptpal{display:inline-flex;white-space:nowrap;gap:2px}
+.capa .titu .lt{display:inline-block;font-size:clamp(22px,5.8vw,42px);font-weight:900;letter-spacing:0;
+  color:#664216;text-shadow:0 3px 0 #f1ebe4,0 5px 10px rgba(0,0,0,.16);
+  -webkit-animation:letraSil2 .7s both;animation:letraSil2 .7s both}
+.capa .titu .cpesp{display:inline-block;width:14px}
+@-webkit-keyframes letraSil2{from{opacity:0;-webkit-transform:translateX(-40px)}to{opacity:1;-webkit-transform:none}}
+@keyframes letraSil2{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:none}}
+.capa .sub{font-weight:700;color:#2c3745;font-size:clamp(13px,3.6vw,18px);margin:6px 0 4px}
+.capa .chamada{margin-top:14px;font-weight:700;color:#3a4658;font-size:clamp(13px,3.4vw,16px)}
+.capa .cena{margin:14px auto 4px;max-width:620px}
+.capa .capfig{width:auto;height:clamp(74px,19vw,124px);max-width:100%;object-fit:contain;display:block}
+.capa .pl{display:block;font-weight:900;font-size:clamp(16px,4.6vw,26px);color:#fff;background:#8e5c1e;border-radius:12px;
+  padding:8px 14px;box-shadow:0 5px 0 #664216;letter-spacing:.02em;white-space:nowrap}
+.capa .rt{display:block;font-weight:900;font-size:clamp(12px,3.4vw,17px);color:#fff;background:#8e5c1e;
+  border-radius:9px;padding:2px 8px;margin-top:4px;letter-spacing:.03em;white-space:nowrap}
+.capa .cena{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:480px}
+.capa .gav{display:flex;align-items:center;justify-content:center;gap:8px;padding:6px 10px;border-radius:10px;background:#f1ebe4;
+  border:3px solid #8e5c1e;box-shadow:inset 0 -6px 0 rgba(0,0,0,.08),0 4px 10px rgba(0,0,0,.15);
+  -webkit-animation:abreSil2 3.2s ease-in-out infinite;animation:abreSil2 3.2s ease-in-out infinite}
+.capa .gav .capfig{width:clamp(40px,11vw,66px);height:clamp(40px,11vw,66px)}
+.capa .gav .rt{margin:0}
+.capa .puxa{width:26px;height:8px;border-radius:4px;background:#664216;flex:none}
+@-webkit-keyframes abreSil2{0%,100%{-webkit-transform:translateX(0)}50%{-webkit-transform:translateX(10px)}}
+@keyframes abreSil2{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
 @media (prefers-reduced-motion: reduce){
-  .capa .titu .lt,.capa .cena img{-webkit-animation:none;animation:none}
+  .capa *,.capa *:before,.capa *:after{-webkit-animation:none!important;animation:none!important}
 }
 
 #fim,#retomar{display:none;max-width:880px;margin:12px auto;background:#fff;border-radius:22px;padding:20px 16px;
@@ -885,7 +868,7 @@ button.clt:active{background:#eef1f8}
 </div>
 
 <div id="retomar">
-  <h2 style="color:#8d4120;margin:0 0 6px">Você estava aqui!</h2>
+  <h2 style="color:#664216;margin:0 0 6px">Você estava aqui!</h2>
   <p id="retTxt" style="font-weight:700"></p>
   <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
     <button class="bt verde" id="bContinuar">Continuar de onde parei</button>
@@ -2957,7 +2940,7 @@ function rnd(n){ return Math.floor(Math.random() * n); }
 function baralha(a){ var b = a.slice(), i, j, t; for(i = b.length - 1; i > 0; i--){ j = rnd(i + 1); t = b[i]; b[i] = b[j]; b[j] = t; } return b; }
 function pega(pool, qtd){ return baralha(pool).slice(0, Math.min(qtd, pool.length)); }
 function confete(n){
-  var c = document.getElementById("confete"), cores = ["#b0562a", "#f5b301", "#15a34a", "#1179bf", "#8b5cf6"], i;
+  var c = document.getElementById("confete"), cores = ["#8e5c1e", "#f5b301", "#15a34a", "#1179bf", "#8b5cf6"], i;
   for(i = 0; i < n; i++){
     (function(i){
       var d = el("div", "cf");
@@ -3038,5 +3021,5 @@ function novaFolha(){
   </div>
 </div>
 <!--</dossie-html>-->
-<script src="folhas.js?v=be984e9e96"></script>
+<script src="folhas.js?v=68ee0a0d49"></script>
 </body></html>
