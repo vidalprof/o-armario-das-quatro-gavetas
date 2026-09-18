@@ -1,2 +1,13 @@
 58 palavra(s) gravadas, 0 com falha (voz pt-BR-AntonioNeural, rate -25%)
-   lua: aviso — LU com 2 picos (liquida ou vizinha)
+   abacaxi: BA apartada recusada (0.60s passa do teto 0.55s (soletrada)) — ficou a palavra
+   boneca: NE apartada recusada (0.57s passa do teto 0.55s (soletrada)) — ficou a palavra
+   caneta: NE apartada recusada (0.67s passa do teto 0.55s (soletrada)) — ficou a palavra
+   carro: RO apartada recusada (0.68s passa do teto 0.55s (soletrada)) — ficou a palavra
+   cavalo: VA apartada recusada (0.75s passa do teto 0.55s (soletrada)) — ficou a palavra
+   flor: FLOR apartada recusada (sem teto aferido para 4 letras) — ficou a palavra
+   fevereiro: FE apartada recusada (0.80s passa do teto 0.55s (soletrada)) — ficou a palavra
+   fevereiro: VE apartada recusada (0.74s passa do teto 0.55s (soletrada)) — ficou a palavra
+   fevereiro: RO apartada recusada (0.74s passa do teto 0.55s (soletrada)) — ficou a palavra
+   escola: ES apartada recusada (0.64s passa do teto 0.55s (soletrada)) — ficou a palavra
+   folha: FO apartada recusada (0.77s passa do teto 0.55s (soletrada)) — ficou a palavra
+   gato: GA apartada recusada (0.72s passa do teto 0.55s (soletrada)) — ficou a palavra

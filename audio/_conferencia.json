@@ -1,7 +1,7 @@
 {
  "voz": "pt-BR-AntonioNeural",
  "rate": "-25%",
- "metodo": "v4-fade10-ganho-lk-inicio-silencio",
+ "metodo": "v5-citacao-virgula-ou-palavra",
  "tetos_s": {
   "1": 0.4,
   "2": 0.55,
@@ -17,13 +17,14 @@
    "recortes": [
     {
      "ini": 0.208,
-     "dur": 0.152,
-     "ganho_db": -0.32,
+     "dur": 0.32,
+     "ganho_db": -1.26,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "A",
-     "dur_s": 0.15,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.32,
@@ -33,27 +34,30 @@
      "i": 1,
      "silaba": "BA",
      "dur_s": 0.24,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.52,
-     "dur": 0.22,
-     "ganho_db": 1.66,
+     "dur": 0.35,
+     "ganho_db": 0.92,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "CA",
-     "dur_s": 0.22,
-     "nucleos": 1
+     "dur_s": 0.35,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.7,
-     "dur": 1.55,
-     "ganho_db": 6.71,
+     "dur": 0.45,
+     "ganho_db": 7.11,
      "preso_no_teto": false,
      "i": 3,
      "silaba": "XI",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.45,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -64,23 +68,25 @@
    "recortes": [
     {
      "ini": 0.21,
-     "dur": 0.35,
-     "ganho_db": -0.6,
+     "dur": 0.32,
+     "ganho_db": -1.63,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "A",
-     "dur_s": 0.35,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.52,
-     "dur": 1.37,
-     "ganho_db": 6.92,
+     "dur": 0.52,
+     "ganho_db": 1.47,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "SA",
-     "dur_s": 0.2,
-     "nucleos": 1
+     "dur_s": 0.52,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -91,43 +97,47 @@
    "recortes": [
     {
      "ini": 0.212,
-     "dur": 0.268,
-     "ganho_db": 2.96,
+     "dur": 0.4,
+     "ganho_db": 4.23,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "BI",
-     "dur_s": 0.26,
-     "nucleos": 1
+     "dur_s": 0.4,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.44,
-     "dur": 0.2,
-     "ganho_db": 4.02,
+     "dur": 0.43,
+     "ganho_db": 5.22,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "CI",
-     "dur_s": 0.2,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.6,
-     "dur": 0.4,
-     "ganho_db": 0.77,
+     "dur": 0.37,
+     "ganho_db": 2.46,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "CLE",
-     "dur_s": 0.4,
-     "nucleos": 1
+     "dur_s": 0.37,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.96,
-     "dur": 1.34,
-     "ganho_db": 13.71,
+     "dur": 0.28,
+     "ganho_db": 0.65,
      "preso_no_teto": false,
      "i": 3,
      "silaba": "TA",
-     "dur_s": 0.16,
-     "nucleos": 1
+     "dur_s": 0.28,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -138,23 +148,25 @@
    "recortes": [
     {
      "ini": 0.21,
-     "dur": 0.43,
-     "ganho_db": -2.19,
+     "dur": 0.42,
+     "ganho_db": -0.85,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "BO",
-     "dur_s": 0.43,
-     "nucleos": 1
+     "dur_s": 0.42,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.6,
-     "dur": 1.38,
-     "ganho_db": 8.07,
+     "dur": 0.27,
+     "ganho_db": 2.9,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "LA",
-     "dur_s": 0.22,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -165,33 +177,36 @@
    "recortes": [
     {
      "ini": 0.207,
-     "dur": 0.293,
-     "ganho_db": 0.88,
+     "dur": 0.39,
+     "ganho_db": -0.49,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "BO",
-     "dur_s": 0.29,
-     "nucleos": 1
+     "dur_s": 0.39,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.46,
      "dur": 0.34,
-     "ganho_db": 0.68,
+     "ganho_db": 0.84,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "NE",
      "dur_s": 0.34,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.76,
-     "dur": 1.32,
-     "ganho_db": 12.66,
+     "dur": 0.32,
+     "ganho_db": 1.36,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "CA",
-     "dur_s": 0.16,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -202,43 +217,47 @@
    "recortes": [
     {
      "ini": 0.213,
-     "dur": 0.347,
-     "ganho_db": -0.26,
+     "dur": 0.44,
+     "ganho_db": -1.44,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "BOR",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.44,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.52,
-     "dur": 0.24,
-     "ganho_db": -1.75,
+     "dur": 0.41,
+     "ganho_db": -1.87,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "BO",
-     "dur_s": 0.24,
-     "nucleos": 1
+     "dur_s": 0.41,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.72,
-     "dur": 0.34,
-     "ganho_db": -2.53,
+     "dur": 0.38,
+     "ganho_db": 1.08,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "LE",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.38,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 1.02,
-     "dur": 1.32,
-     "ganho_db": 13.11,
+     "dur": 0.3,
+     "ganho_db": -0.11,
      "preso_no_teto": false,
      "i": 3,
      "silaba": "TA",
-     "dur_s": 0.17,
-     "nucleos": 1
+     "dur_s": 0.3,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -249,33 +268,36 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.3,
-     "ganho_db": 0.27,
+     "dur": 0.32,
+     "ganho_db": -1.06,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CA",
-     "dur_s": 0.3,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.46,
-     "dur": 0.3,
-     "ganho_db": -0.01,
+     "dur": 0.44,
+     "ganho_db": 2.17,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "DEI",
-     "dur_s": 0.3,
-     "nucleos": 1
+     "dur_s": 0.44,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.72,
-     "dur": 1.36,
-     "ganho_db": 10.51,
+     "dur": 0.38,
+     "ganho_db": 4.61,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "RA",
-     "dur_s": 0.22,
-     "nucleos": 1
+     "dur_s": 0.38,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -286,33 +308,36 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.26,
-     "ganho_db": -1.08,
+     "dur": 0.3,
+     "ganho_db": -1.15,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CA",
-     "dur_s": 0.26,
-     "nucleos": 1
+     "dur_s": 0.3,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.42,
      "dur": 0.34,
-     "ganho_db": 1.03,
+     "ganho_db": 1.2,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "NE",
      "dur_s": 0.34,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.72,
-     "dur": 1.36,
-     "ganho_db": 12.29,
+     "dur": 0.3,
+     "ganho_db": 1.06,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "TA",
-     "dur_s": 0.2,
-     "nucleos": 1
+     "dur_s": 0.3,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -323,23 +348,25 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.38,
-     "ganho_db": -0.69,
+     "dur": 0.39,
+     "ganho_db": -0.28,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CAR",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.39,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.54,
      "dur": 1.4,
-     "ganho_db": 10.49,
+     "ganho_db": 11.13,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "RO",
      "dur_s": 0.21,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     }
    ]
   },
@@ -350,23 +377,25 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.4,
-     "ganho_db": -1.23,
+     "dur": 0.32,
+     "ganho_db": -1.43,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CA",
-     "dur_s": 0.4,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.56,
-     "dur": 1.38,
-     "ganho_db": 8.18,
+     "dur": 0.45,
+     "ganho_db": 3.42,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "SA",
-     "dur_s": 0.21,
-     "nucleos": 1
+     "dur_s": 0.45,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -377,13 +406,14 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.34,
-     "ganho_db": 1.71,
+     "dur": 0.32,
+     "ganho_db": -1.47,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CA",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.5,
@@ -393,17 +423,19 @@
      "i": 1,
      "silaba": "VA",
      "dur_s": 0.3,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.76,
-     "dur": 1.34,
-     "ganho_db": 12.51,
+     "dur": 0.26,
+     "ganho_db": 7.95,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "LO",
-     "dur_s": 0.17,
-     "nucleos": 1
+     "dur_s": 0.26,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -414,23 +446,25 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.42,
-     "ganho_db": -0.55,
+     "dur": 0.34,
+     "ganho_db": -1.71,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CA",
-     "dur_s": 0.42,
-     "nucleos": 1
+     "dur_s": 0.34,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.58,
-     "dur": 1.38,
-     "ganho_db": 7.35,
+     "dur": 0.34,
+     "ganho_db": 7.23,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "ÇA",
-     "dur_s": 0.21,
-     "nucleos": 1
+     "dur_s": 0.34,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -442,7 +476,7 @@
     {
      "ini": 0.243,
      "dur": 0.677,
-     "ganho_db": 0.87,
+     "ganho_db": 0.94,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CENOU"
@@ -450,7 +484,7 @@
     {
      "ini": 0.88,
      "dur": 1.32,
-     "ganho_db": 10.84,
+     "ganho_db": 11.66,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "RA"
@@ -464,43 +498,47 @@
    "recortes": [
     {
      "ini": 0.224,
-     "dur": 0.336,
-     "ganho_db": -2.11,
+     "dur": 0.44,
+     "ganho_db": 0.28,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CHO",
-     "dur_s": 0.33,
-     "nucleos": 1
+     "dur_s": 0.44,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.52,
-     "dur": 0.26,
-     "ganho_db": -0.34,
+     "dur": 0.27,
+     "ganho_db": -2.75,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "CO",
-     "dur_s": 0.26,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.74,
-     "dur": 0.36,
-     "ganho_db": 0.48,
+     "dur": 0.25,
+     "ganho_db": 5.3,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "LA",
-     "dur_s": 0.36,
-     "nucleos": 1
+     "dur_s": 0.25,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 1.06,
-     "dur": 1.36,
-     "ganho_db": 10.47,
+     "dur": 0.25,
+     "ganho_db": 9.09,
      "preso_no_teto": false,
      "i": 3,
      "silaba": "TE",
-     "dur_s": 0.2,
-     "nucleos": 1
+     "dur_s": 0.25,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -511,13 +549,14 @@
    "recortes": [
     {
      "ini": 0.18,
-     "dur": 1.71,
+     "dur": 0.32,
      "ganho_db": 2.49,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "CÃO",
-     "dur_s": 0.36,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -528,23 +567,25 @@
    "recortes": [
     {
      "ini": 0.204,
-     "dur": 0.356,
-     "ganho_db": -3.23,
+     "dur": 0.37,
+     "ganho_db": 5.1,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "DE",
-     "dur_s": 0.35,
-     "nucleos": 1
+     "dur_s": 0.37,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.52,
-     "dur": 1.37,
-     "ganho_db": 11.64,
+     "dur": 0.38,
+     "ganho_db": 1.23,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "DO",
-     "dur_s": 0.17,
-     "nucleos": 1
+     "dur_s": 0.38,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -555,23 +596,25 @@
    "recortes": [
     {
      "ini": 0.206,
-     "dur": 0.414,
-     "ganho_db": 2.18,
+     "dur": 0.43,
+     "ganho_db": 4.66,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "DI",
-     "dur_s": 0.41,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.58,
-     "dur": 1.31,
-     "ganho_db": 3.94,
+     "dur": 0.33,
+     "ganho_db": 2.06,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "A",
-     "dur_s": 0.16,
-     "nucleos": 1
+     "dur_s": 0.33,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -582,43 +625,47 @@
    "recortes": [
     {
      "ini": 0.215,
-     "dur": 0.185,
-     "ganho_db": -1.13,
+     "dur": 0.31,
+     "ganho_db": -2.47,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "E",
-     "dur_s": 0.18,
-     "nucleos": 1
+     "dur_s": 0.31,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.36,
-     "dur": 0.28,
-     "ganho_db": 1.12,
+     "dur": 0.39,
+     "ganho_db": -0.62,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "LE",
-     "dur_s": 0.28,
-     "nucleos": 1
+     "dur_s": 0.39,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.6,
-     "dur": 0.4,
-     "ganho_db": 4.1,
+     "dur": 0.39,
+     "ganho_db": 1.6,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "FAN",
-     "dur_s": 0.4,
-     "nucleos": 1
+     "dur_s": 0.39,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.96,
-     "dur": 1.34,
-     "ganho_db": 8.61,
+     "dur": 0.22,
+     "ganho_db": 9.99,
      "preso_no_teto": false,
      "i": 3,
      "silaba": "TE",
-     "dur_s": 0.18,
-     "nucleos": 1
+     "dur_s": 0.22,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -630,32 +677,35 @@
     {
      "ini": 0.215,
      "dur": 0.305,
-     "ganho_db": 1.05,
+     "ganho_db": 1.21,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "ES",
      "dur_s": 0.3,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.48,
-     "dur": 0.34,
-     "ganho_db": -1.78,
+     "dur": 0.31,
+     "ganho_db": 0.27,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "CO",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.31,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.78,
-     "dur": 1.37,
-     "ganho_db": 8.5,
+     "dur": 0.29,
+     "ganho_db": 6.9,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "LA",
-     "dur_s": 0.2,
-     "nucleos": 1
+     "dur_s": 0.29,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -667,12 +717,13 @@
     {
      "ini": 0.272,
      "dur": 0.248,
-     "ganho_db": 0.96,
+     "ganho_db": 1.37,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "FE",
      "dur_s": 0.24,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.48,
@@ -682,27 +733,30 @@
      "i": 1,
      "silaba": "VE",
      "dur_s": 0.24,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.68,
-     "dur": 0.26,
-     "ganho_db": 0.24,
+     "dur": 0.42,
+     "ganho_db": 0.68,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "REI",
-     "dur_s": 0.26,
-     "nucleos": 1
+     "dur_s": 0.42,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.9,
      "dur": 1.3,
-     "ganho_db": 12.02,
+     "ganho_db": 13.06,
      "preso_no_teto": false,
      "i": 3,
      "silaba": "RO",
      "dur_s": 0.18,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     }
    ]
   },
@@ -714,12 +768,13 @@
     {
      "ini": 0.24,
      "dur": 1.65,
-     "ganho_db": -2.0,
+     "ganho_db": -1.86,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "FLOR",
      "dur_s": 0.45,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     }
    ]
   },
@@ -731,22 +786,24 @@
     {
      "ini": 0.268,
      "dur": 0.432,
-     "ganho_db": -4.5,
+     "ganho_db": -4.65,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "FO",
      "dur_s": 0.43,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.66,
-     "dur": 1.37,
-     "ganho_db": 5.12,
+     "dur": 0.23,
+     "ganho_db": 3.98,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "LHA",
-     "dur_s": 0.22,
-     "nucleos": 1
+     "dur_s": 0.23,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -757,33 +814,36 @@
    "recortes": [
     {
      "ini": 0.196,
-     "dur": 0.344,
-     "ganho_db": -0.7,
+     "dur": 0.49,
+     "ganho_db": -1.69,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "GAR",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.49,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.5,
-     "dur": 0.38,
-     "ganho_db": 2.16,
+     "dur": 0.33,
+     "ganho_db": 1.51,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "RA",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.33,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.84,
-     "dur": 1.38,
-     "ganho_db": 13.25,
+     "dur": 0.24,
+     "ganho_db": 13.85,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "FA",
-     "dur_s": 0.21,
-     "nucleos": 1
+     "dur_s": 0.24,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -795,22 +855,24 @@
     {
      "ini": 0.187,
      "dur": 0.433,
-     "ganho_db": -0.6,
+     "ganho_db": -0.48,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "GA",
      "dur_s": 0.43,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.58,
-     "dur": 1.33,
-     "ganho_db": 15.29,
+     "dur": 0.29,
+     "ganho_db": -0.93,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "TO",
-     "dur_s": 0.16,
-     "nucleos": 1
+     "dur_s": 0.29,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -821,33 +883,36 @@
    "recortes": [
     {
      "ini": 0.198,
-     "dur": 0.302,
-     "ganho_db": 0.91,
+     "dur": 0.43,
+     "ganho_db": 4.63,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "GI",
-     "dur_s": 0.3,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.46,
-     "dur": 0.38,
-     "ganho_db": -0.07,
+     "dur": 0.37,
+     "ganho_db": 0.82,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "RA",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.37,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.8,
-     "dur": 1.35,
-     "ganho_db": 13.65,
-     "preso_no_teto": false,
+     "dur": 0.22,
+     "ganho_db": 10.67,
+     "preso_no_teto": true,
      "i": 2,
      "silaba": "FA",
-     "dur_s": 0.21,
-     "nucleos": 1
+     "dur_s": 0.22,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -858,23 +923,25 @@
    "recortes": [
     {
      "ini": 0.211,
-     "dur": 0.289,
-     "ganho_db": -0.09,
+     "dur": 0.33,
+     "ganho_db": 5.53,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "I",
-     "dur_s": 0.28,
-     "nucleos": 1
+     "dur_s": 0.33,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.46,
-     "dur": 1.43,
-     "ganho_db": 1.41,
+     "dur": 0.27,
+     "ganho_db": 3.22,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "LHA",
-     "dur_s": 0.23,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -885,13 +952,14 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.34,
-     "ganho_db": 1.35,
+     "dur": 0.49,
+     "ganho_db": 0.02,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "JA",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.49,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.5,
@@ -901,17 +969,19 @@
      "i": 1,
      "silaba": "NE",
      "dur_s": 0.32,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.78,
-     "dur": 1.37,
-     "ganho_db": 7.68,
+     "dur": 0.26,
+     "ganho_db": 6.62,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "LA",
-     "dur_s": 0.19,
-     "nucleos": 1
+     "dur_s": 0.26,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -922,23 +992,25 @@
    "recortes": [
     {
      "ini": 0.205,
-     "dur": 0.515,
-     "ganho_db": 0.49,
+     "dur": 0.43,
+     "ganho_db": -0.39,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "LAN",
-     "dur_s": 0.51,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.68,
-     "dur": 1.4,
-     "ganho_db": 7.02,
+     "dur": 0.31,
+     "ganho_db": 2.96,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "CHE",
-     "dur_s": 0.22,
-     "nucleos": 1
+     "dur_s": 0.31,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -949,23 +1021,25 @@
    "recortes": [
     {
      "ini": 0.21,
-     "dur": 0.39,
-     "ganho_db": -1.0,
+     "dur": 0.37,
+     "ganho_db": 2.39,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "LU",
-     "dur_s": 0.39,
-     "nucleos": 2
+     "dur_s": 0.37,
+     "nucleos": 2,
+     "forma": "citacao"
     },
     {
      "ini": 0.56,
-     "dur": 1.33,
-     "ganho_db": 6.26,
+     "dur": 0.3,
+     "ganho_db": 2.98,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "A",
-     "dur_s": 0.12,
-     "nucleos": 1
+     "dur_s": 0.3,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -976,33 +1050,36 @@
    "recortes": [
     {
      "ini": 0.215,
-     "dur": 0.345,
-     "ganho_db": 0.15,
+     "dur": 0.37,
+     "ganho_db": 1.08,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "MA",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.37,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.52,
-     "dur": 0.38,
-     "ganho_db": 0.65,
+     "dur": 0.34,
+     "ganho_db": -0.15,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "CA",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.34,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.86,
-     "dur": 1.29,
-     "ganho_db": 15.51,
+     "dur": 0.27,
+     "ganho_db": 1.9,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "CO",
-     "dur_s": 0.15,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1013,23 +1090,25 @@
    "recortes": [
     {
      "ini": 0.216,
-     "dur": 0.384,
-     "ganho_db": -1.16,
+     "dur": 0.43,
+     "ganho_db": 0.37,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "MA",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.56,
-     "dur": 1.38,
-     "ganho_db": 7.93,
+     "dur": 0.28,
+     "ganho_db": 5.13,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "LA",
-     "dur_s": 0.22,
-     "nucleos": 1
+     "dur_s": 0.28,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1040,33 +1119,36 @@
    "recortes": [
     {
      "ini": 0.218,
-     "dur": 0.322,
-     "ganho_db": -0.97,
+     "dur": 0.43,
+     "ganho_db": 1.18,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "MA",
-     "dur_s": 0.32,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.5,
-     "dur": 0.36,
-     "ganho_db": -1.82,
+     "dur": 0.41,
+     "ganho_db": 0.01,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "LE",
-     "dur_s": 0.36,
-     "nucleos": 1
+     "dur_s": 0.41,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.82,
-     "dur": 1.33,
-     "ganho_db": 13.08,
+     "dur": 0.28,
+     "ganho_db": 1.08,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "TA",
-     "dur_s": 0.17,
-     "nucleos": 1
+     "dur_s": 0.28,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1077,13 +1159,14 @@
    "recortes": [
     {
      "ini": 0.212,
-     "dur": 1.678,
-     "ganho_db": 0.66,
+     "dur": 0.41,
+     "ganho_db": 0.74,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "MAR",
-     "dur_s": 0.39,
-     "nucleos": 1
+     "dur_s": 0.41,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1094,33 +1177,36 @@
    "recortes": [
     {
      "ini": 0.218,
-     "dur": 0.262,
-     "ganho_db": 1.29,
+     "dur": 0.4,
+     "ganho_db": 1.6,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "MI",
-     "dur_s": 0.26,
-     "nucleos": 1
+     "dur_s": 0.4,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.44,
-     "dur": 0.32,
-     "ganho_db": 0.43,
+     "dur": 0.43,
+     "ganho_db": 0.57,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "NU",
-     "dur_s": 0.32,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.72,
-     "dur": 1.34,
-     "ganho_db": 14.63,
+     "dur": 0.25,
+     "ganho_db": -1.55,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "TO",
-     "dur_s": 0.17,
-     "nucleos": 1
+     "dur_s": 0.25,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1131,23 +1217,25 @@
    "recortes": [
     {
      "ini": 0.216,
-     "dur": 0.404,
-     "ganho_db": -1.7,
+     "dur": 0.36,
+     "ganho_db": 0.14,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "MO",
-     "dur_s": 0.4,
-     "nucleos": 1
+     "dur_s": 0.36,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.58,
-     "dur": 1.36,
-     "ganho_db": 8.06,
+     "dur": 0.28,
+     "ganho_db": 2.02,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "LA",
-     "dur_s": 0.19,
-     "nucleos": 1
+     "dur_s": 0.28,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1158,13 +1246,14 @@
    "recortes": [
     {
      "ini": 0.215,
-     "dur": 1.675,
-     "ganho_db": -0.7,
+     "dur": 0.46,
+     "ganho_db": -0.68,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "MÃO",
-     "dur_s": 0.45,
-     "nucleos": 1
+     "dur_s": 0.46,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1175,43 +1264,47 @@
    "recortes": [
     {
      "ini": 0.213,
-     "dur": 0.267,
-     "ganho_db": 0.96,
+     "dur": 0.39,
+     "ganho_db": 0.12,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "NA",
-     "dur_s": 0.26,
-     "nucleos": 1
+     "dur_s": 0.39,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.44,
-     "dur": 0.24,
-     "ganho_db": 1.6,
+     "dur": 0.29,
+     "ganho_db": 0.71,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "DA",
-     "dur_s": 0.24,
-     "nucleos": 1
+     "dur_s": 0.29,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.64,
-     "dur": 0.28,
-     "ganho_db": 1.68,
+     "dur": 0.4,
+     "ganho_db": 1.5,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "DO",
-     "dur_s": 0.28,
-     "nucleos": 1
+     "dur_s": 0.4,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.88,
-     "dur": 1.34,
-     "ganho_db": 11.92,
-     "preso_no_teto": false,
+     "dur": 0.43,
+     "ganho_db": 2.61,
+     "preso_no_teto": true,
      "i": 3,
      "silaba": "RA",
-     "dur_s": 0.21,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1228,7 +1321,8 @@
      "i": 0,
      "silaba": "PA",
      "dur_s": 0.26,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.4,
@@ -1238,17 +1332,19 @@
      "i": 1,
      "silaba": "NE",
      "dur_s": 0.32,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.68,
-     "dur": 1.35,
-     "ganho_db": 9.78,
+     "dur": 0.23,
+     "ganho_db": 7.41,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "LA",
-     "dur_s": 0.2,
-     "nucleos": 1
+     "dur_s": 0.23,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1260,22 +1356,24 @@
     {
      "ini": 0.2,
      "dur": 0.38,
-     "ganho_db": -2.95,
+     "ganho_db": -2.77,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "PA",
      "dur_s": 0.38,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.54,
-     "dur": 1.35,
-     "ganho_db": 15.3,
+     "dur": 0.25,
+     "ganho_db": -1.6,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "TO",
-     "dur_s": 0.15,
-     "nucleos": 1
+     "dur_s": 0.25,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1286,23 +1384,25 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.3,
-     "ganho_db": -1.84,
+     "dur": 0.48,
+     "ganho_db": -1.35,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "PE",
-     "dur_s": 0.3,
-     "nucleos": 1
+     "dur_s": 0.48,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.46,
-     "dur": 1.43,
-     "ganho_db": 7.75,
+     "dur": 0.3,
+     "ganho_db": 4.3,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "NA",
-     "dur_s": 0.22,
-     "nucleos": 1
+     "dur_s": 0.3,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1313,33 +1413,36 @@
    "recortes": [
     {
      "ini": 0.18,
-     "dur": 0.26,
-     "ganho_db": 3.43,
+     "dur": 0.27,
+     "ganho_db": 5.33,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "PI",
-     "dur_s": 0.26,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.4,
-     "dur": 0.38,
-     "ganho_db": -3.21,
+     "dur": 0.31,
+     "ganho_db": -1.63,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "PO",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.31,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.74,
-     "dur": 1.34,
-     "ganho_db": 11.41,
+     "dur": 0.31,
+     "ganho_db": 1.26,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "CA",
-     "dur_s": 0.16,
-     "nucleos": 1
+     "dur_s": 0.31,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1350,23 +1453,25 @@
    "recortes": [
     {
      "ini": 0.18,
-     "dur": 0.4,
-     "ganho_db": -3.16,
+     "dur": 0.27,
+     "ganho_db": 0.08,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "POR",
-     "dur_s": 0.4,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.54,
-     "dur": 1.35,
-     "ganho_db": 11.58,
+     "dur": 0.3,
+     "ganho_db": 0.83,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "TA",
-     "dur_s": 0.18,
-     "nucleos": 1
+     "dur_s": 0.3,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1377,23 +1482,25 @@
    "recortes": [
     {
      "ini": 0.18,
-     "dur": 0.44,
-     "ganho_db": -1.35,
+     "dur": 0.3,
+     "ganho_db": -1.07,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "PRA",
-     "dur_s": 0.44,
-     "nucleos": 1
+     "dur_s": 0.3,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.58,
-     "dur": 1.33,
-     "ganho_db": 15.22,
+     "dur": 0.27,
+     "ganho_db": -1.36,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "TO",
-     "dur_s": 0.15,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1404,13 +1511,14 @@
    "recortes": [
     {
      "ini": 0.18,
-     "dur": 1.71,
-     "ganho_db": -0.07,
+     "dur": 0.34,
+     "ganho_db": -0.02,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "PÃO",
-     "dur_s": 0.39,
-     "nucleos": 1
+     "dur_s": 0.34,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1421,13 +1529,14 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 1.69,
-     "ganho_db": -4.36,
+     "dur": 0.28,
+     "ganho_db": -4.35,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "PÉ",
-     "dur_s": 0.31,
-     "nucleos": 1
+     "dur_s": 0.28,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1438,23 +1547,25 @@
    "recortes": [
     {
      "ini": 0.2,
-     "dur": 0.3,
-     "ganho_db": -0.24,
+     "dur": 0.41,
+     "ganho_db": 3.81,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "RI",
-     "dur_s": 0.3,
-     "nucleos": 1
+     "dur_s": 0.41,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.46,
-     "dur": 1.43,
-     "ganho_db": 5.37,
+     "dur": 0.15,
+     "ganho_db": 10.13,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "O",
-     "dur_s": 0.13,
-     "nucleos": 1
+     "dur_s": 0.15,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1465,23 +1576,25 @@
    "recortes": [
     {
      "ini": 0.235,
-     "dur": 0.405,
-     "ganho_db": 1.31,
+     "dur": 0.45,
+     "ganho_db": 0.93,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "SA",
-     "dur_s": 0.4,
-     "nucleos": 1
+     "dur_s": 0.45,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.6,
-     "dur": 1.5,
-     "ganho_db": 2.6,
+     "dur": 0.32,
+     "ganho_db": 4.65,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "BÃO",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.32,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1492,33 +1605,36 @@
    "recortes": [
     {
      "ini": 0.236,
-     "dur": 0.384,
-     "ganho_db": 0.81,
+     "dur": 0.46,
+     "ganho_db": 0.45,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "SA",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.46,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.58,
      "dur": 0.36,
-     "ganho_db": -0.9,
+     "ganho_db": -0.7,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "PA",
      "dur_s": 0.36,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     },
     {
      "ini": 0.9,
-     "dur": 1.3,
-     "ganho_db": 15.34,
+     "dur": 0.24,
+     "ganho_db": -0.77,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "TO",
-     "dur_s": 0.13,
-     "nucleos": 1
+     "dur_s": 0.24,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1529,23 +1645,25 @@
    "recortes": [
     {
      "ini": 0.236,
-     "dur": 0.464,
-     "ganho_db": 0.04,
+     "dur": 0.44,
+     "ganho_db": 1.27,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "SA",
-     "dur_s": 0.46,
-     "nucleos": 1
+     "dur_s": 0.44,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.66,
-     "dur": 1.32,
-     "ganho_db": 17.18,
+     "dur": 0.26,
+     "ganho_db": -1.41,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "PO",
-     "dur_s": 0.16,
-     "nucleos": 1
+     "dur_s": 0.26,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1556,23 +1674,25 @@
    "recortes": [
     {
      "ini": 0.232,
-     "dur": 0.448,
-     "ganho_db": 0.39,
+     "dur": 0.5,
+     "ganho_db": 3.61,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "SI",
-     "dur_s": 0.44,
-     "nucleos": 1
+     "dur_s": 0.5,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.64,
-     "dur": 1.34,
-     "ganho_db": 6.98,
+     "dur": 0.26,
+     "ganho_db": 6.57,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "NO",
-     "dur_s": 0.19,
-     "nucleos": 1
+     "dur_s": 0.26,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1583,23 +1703,25 @@
    "recortes": [
     {
      "ini": 0.233,
-     "dur": 0.387,
-     "ganho_db": 1.77,
+     "dur": 0.43,
+     "ganho_db": 1.78,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "SO",
-     "dur_s": 0.38,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.58,
-     "dur": 1.5,
-     "ganho_db": 1.92,
+     "dur": 0.4,
+     "ganho_db": 1.9,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "FÁ",
-     "dur_s": 0.33,
-     "nucleos": 1
+     "dur_s": 0.4,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1610,13 +1732,14 @@
    "recortes": [
     {
      "ini": 0.239,
-     "dur": 1.651,
-     "ganho_db": 0.93,
+     "dur": 0.47,
+     "ganho_db": 0.95,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "SOL",
-     "dur_s": 0.46,
-     "nucleos": 1
+     "dur_s": 0.47,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1627,23 +1750,25 @@
    "recortes": [
     {
      "ini": 0.239,
-     "dur": 0.421,
-     "ganho_db": 0.48,
+     "dur": 0.48,
+     "ganho_db": 1.42,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "SO",
-     "dur_s": 0.42,
-     "nucleos": 1
+     "dur_s": 0.48,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.62,
-     "dur": 1.39,
-     "ganho_db": 7.06,
+     "dur": 0.52,
+     "ganho_db": 0.12,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "PA",
-     "dur_s": 0.23,
-     "nucleos": 1
+     "dur_s": 0.52,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1654,33 +1779,36 @@
    "recortes": [
     {
      "ini": 0.22,
-     "dur": 0.32,
-     "ganho_db": 3.72,
+     "dur": 0.31,
+     "ganho_db": 5.72,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "TI",
-     "dur_s": 0.32,
-     "nucleos": 1
+     "dur_s": 0.31,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.5,
-     "dur": 0.34,
-     "ganho_db": -0.49,
+     "dur": 0.43,
+     "ganho_db": 0.91,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "JO",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.43,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.8,
-     "dur": 1.35,
-     "ganho_db": 12.46,
+     "dur": 0.29,
+     "ganho_db": 1.76,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "LO",
-     "dur_s": 0.21,
-     "nucleos": 1
+     "dur_s": 0.29,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1692,32 +1820,35 @@
     {
      "ini": 0.18,
      "dur": 0.24,
-     "ganho_db": -1.19,
+     "ganho_db": -3.18,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "TO",
      "dur_s": 0.24,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.38,
-     "dur": 0.36,
-     "ganho_db": 0.79,
+     "dur": 0.42,
+     "ganho_db": 0.75,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "MA",
-     "dur_s": 0.36,
-     "nucleos": 1
+     "dur_s": 0.42,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.7,
-     "dur": 1.38,
-     "ganho_db": 7.38,
+     "dur": 0.25,
+     "ganho_db": 8.99,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "TE",
-     "dur_s": 0.19,
-     "nucleos": 1
+     "dur_s": 0.25,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1728,33 +1859,36 @@
    "recortes": [
     {
      "ini": 0.18,
-     "dur": 0.28,
-     "ganho_db": 3.89,
+     "dur": 0.27,
+     "ganho_db": 2.89,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "TU",
-     "dur_s": 0.28,
-     "nucleos": 1
+     "dur_s": 0.27,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.42,
-     "dur": 0.34,
-     "ganho_db": 0.82,
+     "dur": 0.33,
+     "ganho_db": -0.53,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "CA",
-     "dur_s": 0.34,
-     "nucleos": 1
+     "dur_s": 0.33,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.72,
-     "dur": 1.38,
-     "ganho_db": 10.36,
+     "dur": 0.21,
+     "ganho_db": 8.76,
      "preso_no_teto": false,
      "i": 2,
      "silaba": "NO",
-     "dur_s": 0.2,
-     "nucleos": 1
+     "dur_s": 0.21,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   },
@@ -1765,23 +1899,25 @@
    "recortes": [
     {
      "ini": 0.215,
-     "dur": 0.285,
-     "ganho_db": -0.03,
+     "dur": 0.33,
+     "ganho_db": -1.36,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "U",
-     "dur_s": 0.28,
-     "nucleos": 1
+     "dur_s": 0.33,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.46,
      "dur": 1.43,
-     "ganho_db": 9.26,
+     "ganho_db": 9.88,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "VA",
      "dur_s": 0.22,
-     "nucleos": 1
+     "nucleos": 1,
+     "forma": "palavra"
     }
    ]
   },
@@ -1792,23 +1928,25 @@
    "recortes": [
     {
      "ini": 0.207,
-     "dur": 0.393,
-     "ganho_db": 3.15,
+     "dur": 0.38,
+     "ganho_db": 5.0,
      "preso_no_teto": false,
      "i": 0,
      "silaba": "VI",
-     "dur_s": 0.39,
-     "nucleos": 1
+     "dur_s": 0.38,
+     "nucleos": 1,
+     "forma": "citacao"
     },
     {
      "ini": 0.56,
-     "dur": 1.38,
-     "ganho_db": 9.7,
+     "dur": 0.34,
+     "ganho_db": 1.45,
      "preso_no_teto": false,
      "i": 1,
      "silaba": "DRO",
-     "dur_s": 0.21,
-     "nucleos": 1
+     "dur_s": 0.34,
+     "nucleos": 1,
+     "forma": "citacao"
     }
    ]
   }
