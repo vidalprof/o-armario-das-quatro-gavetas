@@ -371,6 +371,11 @@ function abreCruz(E, pi){
      `rolaParaCruz`. Agora quem abre é o teclado do APARELHO, que o próprio
      navegador já trata: ele rola a página para deixar o campo com foco à vista.
      Foi por isso que as duas peças saíram daqui juntas. */
+  /* ⚠️ Toque na casinha dispara o `onclick` da casinha E o da grade: a mesma
+     palavra pede para abrir duas vezes. Se já está aberta, só devolve o foco —
+     fechar e reabrir era o que apagava a letra e (antes do conserto acima)
+     estourava. */
+  if(CRUZ && CRUZ.E === E){ try{ TECIN && TECIN.focus(); }catch(e){} return; }
   if(CRUZ) fechaCruz();
   CRUZ = {E: E, val: "", pi: pi};
   if(E.bt) E.bt.className = E.bt.className.indexOf("oculta") > -1 ? "pista oculta" : "pista ativa";
@@ -384,14 +389,33 @@ function abreCruz(E, pi){
   falar("escreva");
 }
 function fechaCruz(){
+  /* ⚠️⚠️ LIÇÃO PAGA — "O ALUNO NÃO CONSEGUIA DIGITAR" (Marcos, 18/set/2026, na
+     folha 8 d'A Fábrica de Nomes). Aqui estava `CRUZ = null; pintaCruz();` — e
+     `pintaCruz` começa lendo `CRUZ.E`. Estourava TypeError toda vez que se
+     fechava a caneta. Como a casinha E a grade tinham `onclick`, um toque na
+     casinha chamava `abreCruz` duas vezes: a segunda fechava a primeira, o
+     fecho estourava, e o `abreCruz` morria ANTES de reabrir. Resultado: a
+     criança tocava, nada abria, digitava e nada acontecia — sem erro na tela.
+     O jogador da banca não pegou porque clicava na GRADE (um `onclick` só);
+     agora ele clica na CASINHA, como a criança. Aqui: pintar com o E guardado
+     ANTES de zerar, e nunca ler CRUZ depois de zerá-lo. */
   if(!CRUZ) return;
   var E = CRUZ.E;
   if(E.bt) E.bt.className = E.bt.className.indexOf("oculta") > -1 ? "pista oculta" : "pista";
   CRUZ = null;
   if(TECIN){ TECIN.value = ""; try{ TECIN.blur(); }catch(e){} }
-  pintaCruz();
+  limpaCruz(E);
+}
+function limpaCruz(E){
+  (E && E.cels || []).forEach(function(c){
+    if(!c || c.className.indexOf(" ok") > -1) return;
+    var n = c.querySelector(".cn");
+    c.textContent = ""; if(n) c.appendChild(n);
+    c.className = "ccel viva";
+  });
 }
 function pintaCruz(){
+  if(!CRUZ) return;                       /* nunca ler CRUZ.E sem CRUZ */
   var E = CRUZ.E, v = CRUZ.val;
   E.cels.forEach(function(c, i){
     if(!c) return;
@@ -608,10 +632,13 @@ function campoTeclado(){
     if(ev.key === "Enter"){ ev.preventDefault(); confereCruz(); }
     else if(ev.key === "Escape"){ fechaCruz(); }
   });
-  TECIN.addEventListener("blur", function(){
-    /* sair do campo não perde o que já foi escrito — só fecha a caneta */
-    setTimeout(function(){ if(CRUZ && document.activeElement !== TECIN) fechaCruz(); }, 120);
-  });
+  /* ⚠️⚠️ PERDER O FOCO NÃO FECHA MAIS A PALAVRA (18/set/2026). Aqui havia um
+     `blur -> fechaCruz()`. Medido no navegador com o gesto da criança: ela toca
+     na casinha, toca em "Ouvir a frase" para escutar de novo (o que a folha
+     CONVIDA a fazer) e o foco vai para o botão — a palavra fechava, e o que ela
+     digitava em seguida caía no vazio. No PC a digitação nem precisa do foco
+     (o teclado é ouvido no documento); no celular, tocar de novo na casinha
+     devolve o foco e reabre o teclado do aparelho. Então o blur não faz nada. */
   document.body.appendChild(TECIN);
   return TECIN;
 }
@@ -635,9 +662,20 @@ document.addEventListener("keydown", function(ev){
     if(ev.key === "Backspace"){ ev.preventDefault(); ATIVO_LETRAS("ap"); return; }
     if(ev.key === "Enter"){ ev.preventDefault(); ATIVO_LETRAS("ok"); return; }
   }
-  if(!CRUZ) return;
   if(document.activeElement && document.activeElement.id === "nomeIn") return;
   var k = (ev.key || "").toUpperCase();
+  /* ⭐ DIGITAR SEM TER CLICADO ABRE A PRIMEIRA PALAVRA VAZIA DA FOLHA
+     (18/set/2026, "o aluno não conseguia digitar"). As DUAS PORTAS valem para
+     o gesto também: no PC, o teclado tem de funcionar sem clique. */
+  if(!CRUZ && k.length === 1 && "ABCDEFGHIJKLMNOPQRSTUVWXYZÁÀÂÃÉÊÍÓÔÕÚÜÇ".indexOf(k) > -1){
+    var alvo = null, todos = document.querySelectorAll('.pagina.viva [data-qa^="esc-"]');
+    for(var i = 0; i < todos.length && !alvo; i++){
+      var idq = todos[i].getAttribute("data-qa").slice(4);
+      if(!ST.resp[idq]) alvo = todos[i];
+    }
+    if(alvo){ alvo.click(); }
+  }
+  if(!CRUZ) return;
   if(k.length === 1 && "ABCDEFGHIJKLMNOPQRSTUVWXYZÁÀÂÃÉÊÍÓÔÕÚÜÇ".indexOf(k) > -1){ ev.preventDefault(); digitaCruz(k); }
   else if(ev.key === "Backspace"){ ev.preventDefault(); digitaCruz("ap"); }
   else if(ev.key === "Enter"){ ev.preventDefault(); digitaCruz("ok"); }
