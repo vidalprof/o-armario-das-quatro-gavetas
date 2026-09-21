@@ -49,8 +49,8 @@ function aoAbrir(d, fn){ if(!d._aoAbrir) d._aoAbrir = []; d._aoAbrir.push(fn); }
    Regra da casa: tudo o que a criança PRECISA LER tem que poder ser OUVIDO.
    O desenho do botão é CSS puro: nada de emoji (vira quadradinho nos PCs da
    escola). */
-function botaoSom(rot, aoTocar){
-  var b = el("button", "som");
+function botaoSom(rot, aoTocar, cls){
+  var b = el("button", cls || "som");
   b.innerHTML = '<i class="cone"></i><i class="onda o1"></i><i class="onda o2"></i>';
   b.setAttribute("aria-label", rot || "Ouvir");
   b.onclick = function(ev){ ev.stopPropagation(); sPasso(); aoTocar(); };
@@ -119,7 +119,25 @@ function opcoes(pai, pi, id, lista, certa, cls, falaCerto, falaDica, aoAcertar, 
     b.setAttribute("aria-label", o.aria || o.v);
     b.onclick = function(){ if(b._arrastou){ b._arrastou = false; return; } responde(o, b); };
     if(soltarEm) puxavel(b, soltarEm, function(){ responde(o, b); });
-    box.appendChild(b);
+    /* ⚠️ O ALTO-FALANTE DA RESPOSTA, e ele é DISCRETO e vem ANTES da escolha.
+       Pergunta do Marcos (20/set/2026): *"a atividade tem áudio para ajudar os
+       que não sabem ler? O alto-falante discreto para clicar caso o estudante
+       queira ouvir"*. A resposta era NÃO: a opção tinha `fala`, mas o motor só
+       a tocava DEPOIS do clique — ou seja, a criança tinha de ESCOLHER para
+       ouvir, e aí já tinha respondido. O portão `1o` media a metade errada
+       (cobrava o campo `fala` existir, não a criança poder ouvir antes).
+       ⚠️ Botão IRMÃO, nunca dentro do outro: botão dentro de botão é HTML
+       inválido e o clique vaza para a resposta. O `botaoSom` já faz
+       `stopPropagation`. */
+    if(o.fala){
+      var w = el("div", "opw" + (cls && cls.indexOf("frase") > -1 ? " larga" : ""));
+      w.appendChild(b);
+      w.appendChild(botaoSom("Ouvir esta resposta",
+        (function(f){ return function(){ falar(f); }; })(o.fala), "som somop"));
+      box.appendChild(w);
+    } else {
+      box.appendChild(b);
+    }
   });
   pai.appendChild(box);
 }
@@ -228,7 +246,7 @@ function f0(d){
   /* CAPA COM IDENTIDADE PRÓPRIA — gerada por _padrao/identidade_capa.py (editar lá).
      Cena: o armário: as gavetas abrindo com uma sílaba em cada. O título entra letra a letra (desliza), palavra por palavra
      (nowrap, para não quebrar no meio); as figuras são as do próprio caderno. */
-  var c = el("div", "capa"), nome = "O Armário das Quatro Gavetas", k, letras = "", pos = 0;
+  var c = el("div", "capa"), nome = "Aprendendo a separar as palavras em sílabas", k, letras = "", pos = 0;
   var V = typeof VIMG !== "undefined" ? VIMG : 2;
   nome.split(" ").forEach(function(pal, w){
     var s = "";
@@ -919,7 +937,7 @@ var OBJETIVOS = [
   {n: "Não confundir letra com sílaba", f: [6, 7, 8, 27]},
   {n: "Classificar a palavra pelo número de sílabas", f: [9, 10, 11, 12, 13, 14, 28, 29, 35]},
   {n: "Mexer nas sílabas: tirar, pôr e trocar para formar palavras", f: [15, 16, 17, 18, 19, 20, 33]},
-  {n: "Achar a sílaba certa no meio de muitas", f: [21, 22, 23, 24, 25]},
+  {n: "Achar a sílaba certa no meio de muitas, e escrever a palavra inteira", f: [21, 22, 23, 24, 25]},
   {n: "Separar as palavras dentro da frase e do texto", f: [30, 31, 32]},
   {n: "Escrever a própria palavra com o número de sílabas pedido", f: [34]}
 ];
@@ -2428,8 +2446,8 @@ function f34(d, pi){
       linha. O cartaz que ela leva para o caderno é o que ela construiu. */
 function f35(d, pi){
   faixa(d, pi, NOMES[pi - 1]);
-  enunciado(d, pi, "Você já sabe fazer tudo isto. Agora as palavras que dão " +
-            "nome: leve cada exemplo para a linha dele.", "p" + pi + "enun");
+  enunciado(d, pi, "Você já sabe fazer tudo isto. Agora monte o cartaz: " +
+            "leve cada palavra para a linha do número de sílabas dela.", "p" + pi + "enun");
   var cart = el("div", "cartaz"), linhas = {};
   CART.linhas.forEach(function(L){
     var l = el("div", "cartlin");
