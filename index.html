@@ -2650,9 +2650,34 @@ var VIMG = 2;
    pega: o prefixo de outra pasta vazando para dentro desta. Aqui os DADOS já
    declaram `sb_pato.png` por extenso, que é uma coisa a menos para desencontrar. */
 function img(f, cls, alt){
-  return '<img class="' + (cls || "fig") + '" draggable="false" src="img/' + f +
+  return '<img class="' + (cls || "fig") + '" draggable="false" onload="naoAmplia(this)" src="img/' + f +
          '?v=' + VIMG + '" alt="' + (alt || "") + '">';
 }
+/* ⭐ A FIGURA NUNCA É MOSTRADA MAIOR QUE O PRÓPRIO ARQUIVO (regra do Marcos,
+   14/set/2026: *"nunca ampliar, nunca gerar"*). O CSS da peça dá o TETO (o
+   `clamp`); o arquivo dá o teto DE VERDADE. Sem isto um recorte de 71 px de
+   altura saía a 104 px e borrado, e o portão de leiaute reprovava acima de
+   1,35x. Este guarda já existia no esqueleto e nos cadernos novos; os antigos
+   nasceram sem ele e foram ao ar assim — medido em 21/set/2026, nove cadernos
+   mostravam a mesma faca de 260x71 px esticada até 1,80x. */
+function naoAmplia(im){
+  if(!im || !im.naturalWidth) return;
+  /* ⚠️⚠️ DUAS LINHAS PARA CADA LADO, E AS DUAS SÃO NECESSÁRIAS (21/set/2026).
+     · Por que os DOIS lados: há peça com a altura mandando (`height:clamp(),
+       width:auto`) e peça com a largura mandando (`width:clamp(), height:auto`).
+       Segurar só a altura numa peça do segundo tipo quebra a proporção e a figura
+       sai ESTICADA — medido no _sinon2, folha 5, até 71%.
+     · Por que o `min(100%, ...)`: `max-width` em ESTILO DE LINHA vence o
+       `max-width:100%` da folha de estilo — vence por ser de linha, não por ser
+       menor. Com o valor cru, uma figura larga deixava de encolher e ESTOURAVA a
+       lateral da tela no celular (medido no _casa1, folha 19).
+     · A linha crua vem ANTES de propósito: navegador velho que não entende
+       `min()` recusa a segunda e fica com a primeira, que é o que já está no ar. */
+  im.style.maxWidth = im.naturalWidth + "px";
+  im.style.maxWidth = "min(100%, " + im.naturalWidth + "px)";
+  im.style.maxHeight = im.naturalHeight + "px";
+}
+
 
 /* ---------- estado ---------- */
 var ST = {pag: 0, nome: "", folha: null, resp: {}, lig: {}, tent: {}, prontas: {}, inicio: 0};
@@ -3059,5 +3084,5 @@ function novaFolha(){
   </div>
 </div>
 <!--</dossie-html>-->
-<script src="folhas.js?v=afe7667cd1"></script>
+<script src="folhas.js?v=ac0d2f8983"></script>
 </body></html>
