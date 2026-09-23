@@ -43,7 +43,15 @@ var CORES = ["c1", "c1", "c1", "c1", "c1",
              "c3", "c3", "c3"];
 
 
-function faixa(d, i, titulo){ d.appendChild(el("div", "faixa", '<div class="num">' + i + '</div><h2>' + titulo + '</h2>')); }
+/* ⚠️ O LEMBRETE ENTRA AQUI, DENTRO DA `faixa`, e isso é decisão e não preguiça:
+   a `faixa` é o ÚNICO lugar por onde as trinta e cinco folhas passam. Posto em
+   cada construtor de folha, bastaria eu esquecer um para a folha ficar sem — e
+   sem dar erro nenhum. Aqui não há como esquecer: quem decide se há lembrete é
+   o mapa `LEMB[k].f`, e a folha 35 (o cartaz) simplesmente não está nele. */
+function faixa(d, i, titulo){
+  d.appendChild(el("div", "faixa", '<div class="num">' + i + '</div><h2>' + titulo + '</h2>'));
+  if(typeof montaLembrete === "function"){ montaLembrete(d, i); }
+}
 function aoAbrir(d, fn){ if(!d._aoAbrir) d._aoAbrir = []; d._aoAbrir.push(fn); }
 /* ---------- O ALTO-FALANTE ----------
    Regra da casa: tudo o que a criança PRECISA LER tem que poder ser OUVIDO.
@@ -262,7 +270,7 @@ function monta(){
       no console, e nenhum portão de texto viu. */
 function f0(d){
   /* CAPA COM IDENTIDADE PRÓPRIA — gerada por _padrao/identidade_capa.py (editar lá).
-     Cena: o armário: as gavetas abrindo com uma sílaba em cada. O título entra letra a letra (desliza), palavra por palavra
+     Cena: o ARMÁRIO de madeira — tampo, pés e as quatro gavetas deslizando para fora, cada uma mostrando o que guarda. O título entra letra a letra (desliza), palavra por palavra
      (nowrap, para não quebrar no meio); as figuras são as do próprio caderno. */
   var c = el("div", "capa"), nome = "Aprendendo a separar as palavras em sílabas", k, letras = "", pos = 0;
   var V = typeof VIMG !== "undefined" ? VIMG : 2;
@@ -274,10 +282,32 @@ function f0(d){
     pos++;
     letras += (w ? '<span class="cpesp"></span>' : '') + '<span class="cptpal">' + s + '</span>';
   });
+  /* ⭐ AS GAVETAS MOSTRAM A PALAVRA PARTIDA, e isto não é enfeite: é o assunto
+     do caderno na primeira tela. Antes cada gaveta trazia só a primeira sílaba
+     (GA, VA, POR, RA) e sobrava metade da gaveta vazia. Agora traz a palavra
+     inteira em pedaços separados — GA | TO — que é exatamente o que a criança
+     vai aprender a fazer nas trinta e cinco folhas.
+     ⚠️ As palavras e a separação saem das figuras que já estão na capa, que são
+        as do próprio caderno. */
+  var GAVCAPA = [
+    {f: "gv_gato.png",  s: ["GA", "TO"]},
+    {f: "gv_vaca.png",  s: ["VA", "CA"]},
+    {f: "gv_porco.png", s: ["POR", "CO"]},
+    {f: "gv_rato.png",  s: ["RA", "TO"]}
+  ];
+  var gav = "";
+  GAVCAPA.forEach(function(G, i){
+    var ped = "";
+    G.s.forEach(function(sil){ ped += '<span class="rt">' + sil + '</span>'; });
+    gav += '<div class="gav" style="animation-delay:' + (0.25 + i * 0.30).toFixed(2) + 's">' +
+           '<img class="capfig" draggable="false" onload="naoAmplia(this)" src="img/' + G.f + '?v=' + V + '" alt="">' +
+           '<span class="silgrupo">' + ped + '</span>' +
+           '<i class="puxa"></i></div>';
+  });
   c.innerHTML =
     '<div class="ceu"></div>' + '<h1 class="titu">' + letras + '</h1>' +
     '<div class="sub">Português &middot; 2º ano &middot; 35 folhas sobre a SÍLABA</div>' +
-    '<div class="cena">' + '<div class="gav" style="animation-delay:0.00s">' + '<img class="capfig" draggable="false" onload="naoAmplia(this)" src="img/gv_gato.png?v=' + V + '" alt="">' + '<span class="rt">GA</span>' + '<i class="puxa"></i></div>' + '<div class="gav" style="animation-delay:0.40s">' + '<img class="capfig" draggable="false" onload="naoAmplia(this)" src="img/gv_vaca.png?v=' + V + '" alt="">' + '<span class="rt">VA</span>' + '<i class="puxa"></i></div>' + '<div class="gav" style="animation-delay:0.80s">' + '<img class="capfig" draggable="false" onload="naoAmplia(this)" src="img/gv_porco.png?v=' + V + '" alt="">' + '<span class="rt">POR</span>' + '<i class="puxa"></i></div>' + '<div class="gav" style="animation-delay:1.20s">' + '<img class="capfig" draggable="false" onload="naoAmplia(this)" src="img/gv_rato.png?v=' + V + '" alt="">' + '<span class="rt">RA</span>' + '<i class="puxa"></i></div>' + '</div>' +
+    '<div class="cena"><div class="armario">' + gav + '</div></div>' +
     '<div class="chamada">Escreva o seu nome ali embaixo e toque em <b>Começar</b>.</div>';
   d.appendChild(c);
 }
@@ -1057,6 +1087,37 @@ function abreRelatorio(){
 
   var nome = esch(ST.nome || "O aluno");
   var parecer = nome + " ";
+  /* ⭐ QUAL CONCEITO ELA FOI BUSCAR — informação que este relatório nunca teve.
+     Até hoje ele dizia QUANTO ela acertou por objetivo. O lembrete diz outra
+     coisa, e é a que o professor não consegue ver na sala: ONDE ela sentiu que
+     não sabia, e voltou para ler. Uma criança com 8,5 que abriu quatro vezes o
+     lembrete da vogal aprendeu — e aprendeu ALI.
+     ⚠️ E ELE CONTA O QUE EXISTE, NÃO O QUE EU QUERIA MEDIR. Enquanto o post-it
+        era fechado, este número dizia "ela sentiu falta e foi atrás" — que é a
+        informação boa. Aberto (ordem do Marcos, 23/set), não há o que abrir:
+        ele conta quem pediu para OUVIR. Diz menos, e é o que há. Continuar
+        chamando isto de "abriu" seria mentir no relatório do professor. */
+  function blocoLembretes(){
+    if(typeof LEMB === "undefined" || !ST.lembAbriu) return "";
+    var k, lin = [], n = 0;
+    for(k in LEMB){
+      var q = ST.lembAbriu[k] || 0;
+      if(q > 0){ n += q; lin.push("<li><b>" + esch(LEMB[k].t) + "</b> &mdash; " +
+        q + (q === 1 ? " vez" : " vezes") + "</li>"); }
+    }
+    if(!lin.length){
+      return "<p class='lembrel'><b>Post-its:</b> " + nome + " não pediu para ouvir " +
+             "nenhum. (Cada bloco de folhas traz um post-it aberto com a regra em uma " +
+             "frase, e um alto-falante ao lado.)</p>";
+    }
+    return "<p class='lembrel'><b>Que regra " + nome + " quis OUVIR de novo</b> &mdash; tocou " +
+           "o alto-falante do post-it " + n + (n === 1 ? " vez" : " vezes") + ":</p><ul class='lembrel'>" +
+           lin.join("") + "</ul><p class='lembrel mini'>Pedir para ouvir não é erro: é a " +
+           "criança voltando à regra por conta própria. O que este quadro mostra é " +
+           "<b>qual conceito</b> vale retomar com a turma. ⚠️ O post-it fica <b>aberto</b> " +
+           "na folha, então este número conta quem pediu o ÁUDIO — quem só leu não aparece " +
+           "aqui.</p>";
+  }
   if(domina.length && !retomar.length && !naoAlcancou.length)
     parecer += "domina os objetivos avaliados: " + domina.join("; ") + ".";
   else if(domina.length)
@@ -1080,6 +1141,7 @@ function abreRelatorio(){
       " de " + NOMES.length + " folhas. A coluna <b>%</b> conta o caderno inteiro; " +
       "a coluna <b>do que fez</b> conta só o que a criança chegou a responder — " +
       "é esta que diz como ela foi.</p>") +
+    blocoLembretes() +
     "<table><tr><th>Objetivo</th><th>De primeira</th><th>%</th>" +
     "<th>do que fez</th><th>Com ajuda</th></tr>" + linhas + "</table>" +
     "<p class='comonota'>Nota de 0 a 10: acerto de primeira vale 1,0 e acerto com ajuda vale 0,6. " +
